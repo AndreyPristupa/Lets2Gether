@@ -7,6 +7,7 @@
 role :app, %w{web371.webfaction.com}
 role :web, %w{web371.webfaction.com}
 role :db,  %w{web371.webfaction.com}, :primary => true
+set :password, ask('igbkbdbkbnhb4', nil)
 
 
 # Extended Server Syntax

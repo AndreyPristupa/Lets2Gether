@@ -2,7 +2,7 @@
 lock '3.2.1'
 
 set :application, 'Lets2gether'
-set :repo_url, 'git@github.com:AndreyPristupa/Lets2Gether.git'
+set :repo_url, 'https://github.com/AndreyPristupa/Lets2Gether.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
@@ -21,8 +21,9 @@ set :user, 'positivegame'
 set :password, 'igbkbdbkbnhb4'
 set :scm_username, 'AndreyPristupa'
 set :scm_password, 'igbkbdbkbnhb4'
+set :scm_passphrase, 'trance'
 set :use_sudo, false
-set :ssh_options, { :forward_agent => true }
+set :ssh_options, { :forward_agent => false }
 set :tmp_dir, '/home/positivegame/123'
 #ssh_options[:keys] = 'C:/Users/Andrey/.ssh/'
 
@@ -30,7 +31,7 @@ set :tmp_dir, '/home/positivegame/123'
 # set :format, :pretty
 
 # Default value for :log_level is :debug
-# set :log_level, :debug
+ set :log_level, :info
 
 # Default value for :pty is false
 # set :pty, true
@@ -48,11 +49,6 @@ set :tmp_dir, '/home/positivegame/123'
 # set :keep_releases, 5
 
 namespace :deploy do
-
-  desc 'Restart nginx'
-  task :restart do
-    run "#{deploy_to}/bin/restart"
-  end
 
   desc 'Restart application'
   task :restart do

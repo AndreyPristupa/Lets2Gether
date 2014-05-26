@@ -229,6 +229,7 @@ DEPENDENCIES
   jquery-rails
   magnific-popup-rails
   mini_magick (~> 3.7.0)
+  net-ssh
   paperclip
   rails (= 4.1.0)
   sass-rails (~> 4.0.3)

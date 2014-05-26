@@ -26,4 +26,5 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-modal-rails'
+gem 'net-ssh'
 gem 'capistrano'
