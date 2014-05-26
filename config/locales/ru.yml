@@ -1,0 +1,79 @@
+ru:
+  hello: "Привет мир!"
+  input_email: "Email"
+  password: "Пароль"
+  login_form_title: "Давайте с нами!"
+  signup: "Зарегестрироваться"
+  logout: "Выйти"
+  greetings: "Приветствуем Вас "
+  remember_me: "Запомнить меня"
+  recover_password: "Забыли пароль?"
+  fb_login: "Войти используюя личные данные Facebook"
+  vk_login: "Войти используюя личные данные Vkontakte"
+  signin: "Войти"
+  related_projects: "Популярные проэкты"
+  read_more: "Подробнее"
+  submit: "Отправить"
+  collected: "Собрано"
+  money_count: "Необходимо"
+  latest_projects: "Новые проекты"
+  success_stories_title: "Истории успеха"
+  timer_remain: "Осталось"
+  update_profile: "Нужно еще немного информации о Вас!"
+  firstname: "Имя"
+  lastname: "Фамилия"
+  slogan: "Ваш слоган"
+  sent: "Отправить"
+  image: "Аватара"
+  update_profile_button: "Обновить профиль"
+  create_project: "Создать проэкт"
+  edit: "Редактировать"
+  new_project: "Новый проэкт"
+  save: "Сохранить"
+  create: "Создать"
+  too_short_field: "Минимальная длина поля: 4 символа"
+  too_long_field: "Максимальная длина поля: 100 символов."
+  error_not_valid_youtube_link: "Не верно указана ссылка для видео, попробуйте еще раз"
+  notice: "Информация"
+  success: "Успешно"
+  warning: "Внимание!"
+  error: "Ошибка"
+  progress: "Загрузка..."
+  start_at: "Дата старта"
+  end_at: "Дата завершения"
+  project_cost: "Сколько денег нужно собрать"
+  logo: "Логотип"
+  project_name: "Название проэкта"
+  project_description: "Описание проэкта"
+  project_video: "Видео обзор"
+  confirm_video: "Это то видео которое Вы хотели?"
+  yes_btn: "Оно!"
+  no_btn: "Нет :("
+  date_is_not_valid: "Дата старта сбора средства не может быть позже даты завершения"
+  video_from_youtube: "Вставьте сюда ссылку к видео-презентации из youtube"
+  provide_project: "Поддержать проэкт"
+  errors:
+    messages:
+      not_saved: "Ошибка при регистрации:"
+  activerecord:
+    errors:
+      messages:
+        not_saved: ""
+      models:
+        project:
+          attributes:
+            name:
+              blank: "Обязательное поле!"
+            start_at:
+              blank: "Обязательное поле!"
+        user:
+          attributes:
+            firstname:
+              blank: "Обязательное поле!"
+            lastname:
+              blank: "Обязательное поле!"
+            email:
+              taken: "Пользователь с таким Email уже существует"
+            password:
+              too_short: "Слишком короткий пароль"
+              blank: "Заполните поле \"пароль\""

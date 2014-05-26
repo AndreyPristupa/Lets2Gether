@@ -1,0 +1,41 @@
+.profiles {
+  .profile-header-wrapper{
+    background: #1A1A1A;
+    margin: 0;
+    padding: 10px 0;
+    .profile-header{
+      border-top:2px ridge #8d8d8d;
+      margin: 0 auto;
+      width: 974px;
+      padding: 20px 0;
+      & > div {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 60px;
+      }
+      h3 {
+        margin: 0;
+        color:#fff;
+        font-style: italic;
+        font-family:Tahoma;
+      }
+    }
+  }
+  #update-form {
+    margin: 0 auto;
+    width: 980px;
+    padding: 10px;
+    height: 600px;
+    .input-group {
+      width: 330px;
+      padding: 10px 0;
+//      display: inline-block;
+    }
+  }
+  header {
+    border: none;
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+}

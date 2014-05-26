@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lets2gether</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="<%= controller.controller_name %>">
+<script>
+    <%= extend_gritter :time => 8000, :position => :bottom_right %>
+</script>
+<%= gflash %>
+<header>
+  <div class="test"></div>
+  <div class="header-inner">
+    <div class="user-block">
+        <%= render partial: 'users/partials/signin' %>
+    </div>
+    <div id="logo">
+      <%= link_to (image_tag 'logo.png'), root_path %>
+    </div>
+    <div id="mainmenu">
+      <ul class="menu">
+        <li><a href="/about_us"><b>Что такое</b> LETS2GETHER?</a></li>
+        <%= content_tag :li, (link_to t(:create_project), new_project_path) %>
+        <li><a href="/search"><b>Найти</b> <br />проэкт</a></li>
+        <li><a href="/partners"><b>Найти</b> партнеров</a></li>
+        <li><a href="/charity"><b>Благотворительность</b></a></li>
+      </ul>
+    </div><!-- mainmenu -->
+  </div>
+</header>
+
+<%= yield %>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <%= image_tag 'logo_footer.png', alt: 'Lets2Gether' %>
+      <br />
+      <%= link_to '@Lets2Gether 2014', root_path %>
+    </div>
+
+    <div class="footer-menu">
+      <div class="column">
+        <ul>
+            <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+          <li><%= link_to 'Тестовая ссылка', '#' %></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-socials">
+      <form action="#">
+        <input type="email" name="user_email" placeholder="Email" />
+        <input type="submit" value="Подписаться" />
+      </form>
+      <div class="footer-social-icons">
+        <%= link_to (image_tag 'vk_com.png'), '#' %>
+        <%= link_to (image_tag 'fb_com.png'), '#' %>
+        <%= link_to (image_tag 'rss_com.png'), '#' %>
+        <%= link_to (image_tag 'tw_com.png'), '#' %>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

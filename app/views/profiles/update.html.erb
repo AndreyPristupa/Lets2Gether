@@ -1,0 +1,22 @@
+<section id="update-form">
+  <h2><%= t(:update_profile) %></h2>
+
+  <%= form_for(@user, class: 'form-inline', url: update_profile_path, method: :put, remote:true) do |f|  %>
+    <div class="input-group">
+      <%= f.label :firstname, t(:firstname) %>
+      <%= f.text_field :firstname, class: 'form-control', placeholder: t(:firstname) %>
+    </div>
+    <div class="input-group">
+      <%= f.label :firstname, t(:lastname) %>
+      <%= f.text_field :lastname, class: 'form-control', placeholder: t(:lastname) %>
+    </div>
+
+   <div class="input-group">
+     <%= f.label :slogan, t(:slogan) %>
+     <%= f.text_field :slogan, class: 'form-control', placeholder: t(:slogan) %>
+   </div>
+      <div class="input-group">
+        <%= f.button t(:update_profile_button), type: 'submit', class: 'btn btn-primary' %>
+      </div>
+  <% end %>
+</section>

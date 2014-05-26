@@ -1,0 +1,11 @@
+<section id="top-section">
+    <div class="slideshow">
+      <%= image_tag 'banners/slide_1.png' %>
+    </div>
+    <%= render partial: 'users/partials/loginform' %>
+</section>
+<section id="content">
+    <%= render partial: 'commons/partials/module', locals: {:partial => '/projects/partials/related', :title => t(:related_projects), :locals => false} %>
+    <%= render partial: 'commons/partials/module', locals: {:partial => '/projects/partials/latest', :title => t(:latest_projects), :locals => false} %>
+</section>
+<%= content_tag :section, (content_tag :div, (render partial: 'stories/partials/success_stories', locals: {:title => t(:success_stories_title)}),class: 'success-inner') ,class:'success-history' %>

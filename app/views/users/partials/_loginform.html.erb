@@ -1,0 +1,17 @@
+<div class="login-form">
+    <%= form_for('user', :url => 'user/signup', remote:true) do |f| %>
+      <%= content_tag :h1, t(:login_form_title) %>
+        <div class="login-fields">
+          <%= f.text_field :email, placeholder: t(:input_email) %>
+          <%= f.text_field :password, type:'password', placeholder: t(:password) %>
+        </div>
+      <%= content_tag :div, (f.submit t(:signup), class: 'submit'), class:'login-btn' %>
+      <%= content_tag :div, (f.check_box :remember) + ' ' + t(:remember_me), class:'rememberMe' %>
+      <%= content_tag :div, (link_to t(:recover_password), '/user/recover'), class:'forget-password' %>
+    <% end %>
+    <%= content_tag :div, (
+        (link_to (image_tag 'fb-login-btn.png', alt: t(:fb_login)),'#')+
+        (link_to (image_tag 'vk-login-btn.png', alt: t(:vk_login)), '#')
+    ), class:'social-login-btns' %>
+  <%= content_tag :div, (link_to t(:signin), new_user_path), class:'registration-link' %>
+</div>

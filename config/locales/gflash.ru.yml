@@ -1,0 +1,33 @@
+ru:
+  gflash:
+    #
+    # These are the translations for the different titles.
+    #
+    titles:
+      notice: "Информация"
+      success: "Успешно"
+      warning: "Внимание!"
+      error: "Ошибка"
+      progress: "Загрузка..."
+    errors:
+      error_not_valid_youtube_link: "Не верно указана ссылка для видео, попробуйте еще раз"
+    #
+    # Add default gflash messages:
+    defaults:
+       success: "Успешно!"
+       error: "Oops! Что-то пошло не так..."
+       create:
+         success: "Удачно!"
+         error: "Хьюстон, у нас проблемы! Проверьте форму, возможно Вы что-то заполнили не так."
+    #
+    # Add gflash messages for controller actions:
+    projects:
+       new:
+         notice: "This is a notification"
+         error: "Хьюстон, у нас проблемы! Проверьте форму, возможно Вы что-то заполнили не так."
+         success: "Удачно!"
+
+    #
+    # Inside controller: 
+    # gflash :notice, :error
+    #

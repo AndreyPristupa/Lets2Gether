@@ -1,0 +1,21 @@
+// Place all the styles related to the Projects controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.projects {
+  .input-group{
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .editor {
+    min-height: 500px;
+  }
+  .wrapper {
+    position: relative;
+  }
+  #video-frame {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

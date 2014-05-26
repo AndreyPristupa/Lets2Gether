@@ -1,0 +1,6 @@
+<div class="content-inner">
+    <%= (content_tag :h2, title, class: 'title') if title %>
+    <% Project.latest.each do |p| %>
+        <%= render partial: 'projects/partials/project_block', locals: {:p => p} %>
+    <% end %>
+</div>

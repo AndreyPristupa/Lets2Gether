@@ -1,0 +1,62 @@
+// Place all the behaviors and hooks related to the matching controller here.
+// All this logic will automatically be available in application.js.
+<% url = Lets2gether::Application.routes.url_helpers %>
+$(document).on('ready', function(){
+    $('[data-behaviour~=datepicker]').datepicker({
+        format: 'dd M yyyy'
+    });
+    $('.wysihtml5').each(function(i, elem) {
+        $(elem).wysihtml5();
+    });
+
+    $('#start_at').datepicker().on('changeDate',function(){
+        $('#project_start_at').val($(this).datepicker('getDate').getTime())
+    });
+
+    $('#end_at').datepicker().on('changeDate',function(){
+       $('#project_end_at').val($(this).datepicker('getDate').getTime())
+    });
+    if($('#project_video')) {
+        if ($('#project_video').val().length > 10) {
+            prepareVideo($('#project_video').val()); //fn in view
+        }
+    }
+
+    $.each($('#project_start_at, #project_end_at'), function(k,v) {
+        var o = $(v);
+        if (o.val().length == 13) {
+            $('#'+o.attr('id').substring(8)).datepicker('setDate', new Date(o.val()*1)) //convert to int
+        }
+    });
+});
+
+var payments = {
+    init: function(){
+            var modal = $('#ajax-modal');
+            $('.test').on('click', function(){
+                // create the backdrop and wait for next modal to be triggered
+//                $('body').modalmanager('loading');
+                    modal.load("<%= url.paymentslist_payments_path %>", '', function(){
+                        modal.modal();
+                    });
+            });
+
+            modal.on('click', '.update', function(){
+                modal.modal('loading');
+                setTimeout(function(){
+                    modal
+                            .modal('loading')
+                            .find('.modal-body')
+                            .prepend('<div class="alert alert-info fade in">' +
+                                    'Updated!<button type="button" class="close" data-dismiss="alert">&times;</button>' +
+                                    '</div>');
+                }, 1000);
+            });
+            $.fn.modal.defaults.spinner = $.fn.modalmanager.defaults.spinner =
+                    '<div class="loading-spinner" style="width: 200px; margin-left: -100px;">' +
+                            '<div class="progress progress-striped active">' +
+                            '<div class="progress-bar" style="width: 100%;"></div>' +
+                            '</div>' +
+                            '</div>';
+    }
+};

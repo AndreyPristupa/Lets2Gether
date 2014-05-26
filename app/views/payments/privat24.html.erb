@@ -1,0 +1,27 @@
+<div class="from">
+  <form class="form-inline" method="post" action="https://api.privatbank.ua/p24api/ishop">
+    <div class="input-group">
+      <label for="ccy">Валюта</label>
+      <select name="ccy" id="ccy" class="form-control">
+        <option value="UAH" selected>Гривна</option>
+        <option value="USD">Доллары</option>
+        <option value="EUR">Евро</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="amt">Сумма</label>
+      <input id="amt" type="text" class="form-control" name="amt" placeholder="Сумма которую хотите пожертвовать" />
+    </div>
+    <input type="hidden" name="merchant" value="<%= @options[:merchant] %>" />
+    <input type="hidden" name="order" value="<%= @payment.id %>" />
+    <input type="hidden" name="details" value="Поддержка проэкта № <%= @params[:project_id] %>" />
+    <input type="hidden" name="ext_details" value="" />
+    <input type="hidden" name="pay_way" value="privat24" />
+    <input type="hidden" name="return_url" value="<%= @options[:return_url] %>" />
+    <input type="hidden" name="server_url" value="<%= @options[:server_url] %>" />
+    <br/>
+    <div class="input-group">
+      <%= content_tag :button,t(:sent), type:'submit',target:'_blank', class:'btn btn-primary' %>
+    </div>
+  </form>
+</div>

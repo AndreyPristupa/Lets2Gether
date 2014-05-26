@@ -1,0 +1,622 @@
+// Place all the styles related to the Commons controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* begin overall style */
+
+
+
+body
+{
+  /*background:white url(bg.gif) repeat-x left top;*/
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+h2.title,
+h1.title {
+  font-family: Georgia;
+  /*font-size: 24px;*/
+  border-bottom:1px solid #1a1a1a;
+  color:#1a1a1a;
+  margin-top: 10px;
+  font-weight: bold;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: #1a1a1a;
+  border-bottom:2px solid #cccccc;
+}
+
+header .header-inner {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+
+.user-block {
+  float: right; margin: 8px;
+}
+
+.user-block a {
+  color:#99ccff;
+  font-family: "Myriad Pro";
+  text-decoration: none;
+  font-size: 14px;
+}
+#logo
+{
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+
+#mainmenu
+{
+  position: absolute;
+  top: 47px;
+  left: 149px;
+  font-family: Arial;
+}
+
+#mainmenu ul
+{
+  padding: 0;
+  margin: 0;
+  padding: 0.4em 0 0.3em 0;
+}
+
+#mainmenu ul li
+{
+  display: inline-block;
+  width: 106px;
+  text-align: center;
+}
+#mainmenu ul li:first-child {
+  margin-right: 28px;
+}
+
+#mainmenu ul li:last-child {
+  margin-left: 40px;
+}
+
+#mainmenu ul li a
+{
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#mainmenu ul li a b {
+  color:#99ccff;
+}
+
+#mainmenu ul li a:hover b
+{
+  color: #fff;
+}
+
+
+#top-section {
+  padding: 34px 0;
+  margin: 0 auto;
+  width: 980px;
+}
+
+#top-section .slideshow {
+  padding-right: 30px;
+  border-right: 1px solid #ccc;
+  display: inline-block;
+}
+
+#top-section .login-form {
+  display: inline-block;
+  background-color: #c3e3f7;
+  border-radius: 10px;
+  box-shadow: 1px 2px 0px #a09e9e;
+  width: 293px;
+  height: 440px;
+  padding: 10px;
+  vertical-align: top;
+  margin-left: 27px;
+}
+
+
+/**
+*
+* Login-form main page
+*
+**/
+#top-section {text-align: left;}
+#top-section .login-form h1 {
+  font-family: "Myriad Pro";
+  font-size: 24px;
+  margin: 20px 0;
+  color: #6f79ba;
+  text-align: center;
+  font-weight: bold;
+}
+
+#top-section .login-form form .login-fields input {
+  width: 80%;
+  border-radius: 16px;
+  box-shadow: 2px 2px 1px #bfbfbf inset;
+  border:none;
+  padding: 7px 10px;
+  color:#999999;
+  margin-bottom: 22px;
+}
+
+#top-section .login-form form .forget-password a{
+  color: #808080;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+#top-section .login-form form .rememberMe input{
+  border-color:#828384;
+  margin: 0;
+  vertical-align: text-top;
+}
+
+#top-section .login-form form .rememberMe {
+  margin-right: 35px;
+}
+#top-section .login-form form .forget-password,
+#top-section .login-form form .rememberMe {
+  display: inline-block;
+  color: #808080;
+  font-size: 12px;
+}
+
+#top-section .login-form form .login-btn input {
+  border:none;
+  background: url(login-button.png) 0 0 repeat-x;
+  border-radius: 8px;
+  display: block;
+  width: 85%;
+  height: 23px;
+  font-weight: bold;
+  color:#fff;
+  font-size: 15px;
+  margin: 3px 0 20px 23px;
+  cursor: pointer;
+}
+
+#top-section .login-form .registration-link a {
+  color:#808080;
+  font-size: 14px;
+}
+
+#top-section .login-form .social-login-btns a img{
+  margin-top: 10px;
+}
+
+/**
+*
+* Section content
+*
+**/
+
+#content,.content-box {
+  background: #fff url(content-bg.png) 0 0;
+  border-top: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.content {
+
+}
+
+.box {
+  margin: 0 auto;
+  padding: 1px 0;
+  width: 980px;
+}
+
+.box-content {
+  padding: 40px 0 20px 0;
+}
+
+.box-content .left-column,
+.box-content .right-column {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 0;
+}
+
+.box-content .left-column {
+  width: 640px;
+  margin-right: 20px;
+}
+.box-content .right-column {
+  width: 310px;
+}
+
+#content .content-inner {
+  width: 980px;
+  margin: 0 auto;
+}
+
+
+/**
+*
+* Project Block
+*
+**/
+
+.project-block {
+  font-family: Georgia;
+  color: #1a1a1a;
+  display: inline-block;
+  vertical-align: top;
+  width: 227px;
+  height: 440px;
+  overflow: hidden;
+  margin: 0 15px 18px 0;
+  background: #fff;
+  box-shadow: 3px 3px 2px #898989;
+  border-radius: 8px;
+  .project-image {
+    height: 250px;
+    width: 200px;
+    text-align: center;
+    display: block;
+  }
+}
+
+.project-block .project-inner {
+  padding: 3px 10px;
+  position: relative;
+}
+
+.project-block .project-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.project-block .project-description {
+  font-weight: normal;
+  font-size: 12px;
+  font-family: Arial;
+  height: 69px;
+}
+
+.project-block .project-description a {
+  color: #012282;
+  text-decoration: none;
+  font-size: 12px;
+}
+.project-block .project-paid-count,
+.project-block .project-paid-need
+{
+  display: block;
+  width: 100px;
+  font-size: 18px;
+  line-height: 1;
+  margin-top: 6px;
+  margin-left: 20px;
+}
+
+.project-block .project-paid-count span,
+.project-block .project-paid-need span
+{
+  font-size: 12px;
+  display: block;
+}
+.project-block .project-percent {
+  width: 26%;
+  line-height: 57px;
+  text-align: center;
+  vertical-align: top;
+  background: green;
+  border-radius: 27px;
+  position: absolute;
+  right: 29px;
+  color:#fff;
+  top: 107px;
+  font-size: 18px;
+}
+
+/**
+*
+* Project Page
+*
+**/
+
+.project-head {
+  margin-bottom: 20px;
+}
+
+.project-head > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.project-head .project-info {
+  width: 300px;
+  height: 480px;
+  margin-left: 15px;
+  background: #c3e3f7;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px #ccc;
+}
+
+.project-head .project-info .project-location {
+  background: url(location-icon.png) 0 0 no-repeat;
+  padding-left: 15px;
+}
+
+.project-head .project-info .project-description {
+  padding: 10px 18px 0;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.project-head .project-info .project-description:before {
+  content: "“ ";
+}
+.project-head .project-info .project-description:after {
+  content: "...”";
+}
+.project-head .project-info .project-timer {
+  margin-left: 18px;
+}
+.project-head .project-info .project-timer h4 {
+  margin-bottom: 0;
+  color:#9c4744;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.project-head .project-info .project-paid {
+  margin-left: 18px;
+  margin-top: 5px;
+  color:#1a1a1a;
+  font-size: 28px;
+  position: relative;
+  line-height: 1.2;
+}
+.project-head .project-info .project-paid > div {
+  font-size: 19px;
+  color:#1a1a1a;
+}
+
+.project-head .project-info .project-paid div.percent {
+  background: none repeat scroll 0 0 #008000;
+  line-height: 65px;
+  position: absolute;
+  right: 48px;
+  top: 28px;
+  width: 65px;
+  text-align: center;
+  color:#fff;
+  border-radius: 42px;
+}
+.project-head .project-info .project-provide {
+  text-align: center;
+  margin-top: 9px;
+}
+
+#timer {
+  color:#9c4744;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.project-head .project-info .project-location span {
+  font-size: 14px;
+}
+
+.project-body .project-description {
+  font-family: Arial;
+  font-size: 16px;
+}
+
+
+
+
+.project-socials {
+//  margin-top: 40px;
+}
+
+.comments-block {
+  background: #c3e3f7;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px #ccc;
+  padding: 10px;
+}
+
+.comments-block .comments-user {
+  width: 90px;
+  text-align: center;
+  display: inline-block;
+}
+
+.comments-block .comments-description {
+  display: inline-block;
+  width: 195px;
+  vertical-align: top;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/**
+*
+* Success History Block
+*
+**/
+
+section.success-history {
+  background: #c3e3f7;
+  border-top: 2px solid #cccccc;
+  padding-bottom: 20px;
+}
+
+.success-history .success-inner {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.success-history .success-inner .success-history-block {
+  display: inline-block;
+  width: 270px;
+  padding: 20px;
+  position: relative;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px #ccc;
+  margin-right: 20px;
+}
+.success-history .success-inner .success-history-block:last-child {
+  margin-right: 0;
+}
+
+.success-history .success-inner .success-history-block .success-history-image {
+  text-align: center;
+}
+
+.success-history .success-inner .success-history-block .success-history-image img {
+  border-radius: 127px;
+  height: 230px;
+  width: 230px;
+}
+
+.success-history .success-inner .success-history-block .success-history-moneycount {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  background: url(success-history-strip.png) 0 0 no-repeat;
+  line-height: 35px;
+  width: 67px;
+  padding-right: 5px;
+  height: 58px;
+  text-align: center;
+  color:#fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.from {
+  min-height: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  width: 980px;
+}
+
+/**
+*
+* Footer
+*
+**/
+
+footer {
+  background: #1a1a1a;
+  width: 100%;
+  display: block;
+}
+
+footer a {
+  color:#e7e7e7;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color:#e7e7e7;
+}
+
+footer .footer-inner {
+  width: 980px;
+  margin:0 auto;
+  padding: 20px 0px;
+}
+
+footer .footer-inner .footer-logo {
+  display: inline-block;
+  text-align: center;
+}
+
+footer .footer-inner .footer-menu {
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .footer-inner .footer-menu ul {
+  list-style: none;
+}
+
+footer .footer-inner .footer-socials {
+  display: inline-block;
+  vertical-align: top;
+  float:right;
+  width: 150px;
+}
+footer .footer-inner .footer-socials > form input[type=submit] {
+  background: #2caa2c;
+  padding: 3px 30px;
+  border-radius: 15px;
+  border:none;
+  color:#e7e7e7;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+footer .footer-inner .footer-socials > form input[type=email] {
+  border-radius: 15px;
+  width: 147px;
+  margin-bottom: 13px;
+  padding-left: 10px;
+  padding-top:2px;
+  padding-bottom: 2px;
+}
+
+footer .footer-inner .footer-socials .footer-social-icons {
+  border:1px solid #e7e7e7;
+  border-radius: 7px;
+  margin-top: 13px;
+  width: 130px;
+  height: 30px;
+  padding: 4px 15px 2px 15px;
+}
+
+footer .footer-inner .footer-socials .footer-social-icons a img {
+  margin-right: 4px;
+}
+
+#footer{
+  background-color:#1A1A1A;
+}
+
+footer a{
+  color:#E7E7E7;
+  text-decoration: none;
+  font-size: 14px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+footer a:hover{
+  color:#e7e7e7;
+}
+
+footer .column {
+  display:inline-block; vertical-align:top;
+}
+
+footer .column > ul.footerMenu > li {
+  display:block;
+
+}
+
+footer .column:first-child {
+  margin-left:100px
+}

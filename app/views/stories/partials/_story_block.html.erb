@@ -1,0 +1,6 @@
+<div class="success-history-block">
+  <%= content_tag :div, (link_to (image_tag s.image),s), class: 'success-history-image' %>
+  <%= content_tag :div, s.project.cost.to_s ,class: 'success-history-moneycount' %>
+  <%= content_tag :div, (content_tag :h3, s.name), class:'success-history-name' %>
+  <%= content_tag :div, smart_truncate(s.description, :words => 20), class: 'success-history-description' %>
+</div>

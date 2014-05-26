@@ -1,0 +1,10 @@
+<section class="profile-header-wrapper">
+    <div class="profile-header">
+        <div class="profile-image">
+          <%= image_tag 'no_image.jpg', width: 351, height: 218 %>
+        </div>
+        <div class="profile-information">
+          <h3><%= @user.firstname %> <%= @user.lastname %>(<%= link_to t(:edit), update_profile_path %>)</h3>
+        </div>
+    </div>
+</section>

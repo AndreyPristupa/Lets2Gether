@@ -1,0 +1,38 @@
+<div class="content-box">
+    <div class="box">
+      <h1 class="title"><%= @category.name %></h1>
+        <p id="notice"><%= notice %></p>
+
+        <div class="left-column">
+          <div class="categories-sidebar">
+            <ul>
+              <% @categories.each do |c| %>
+                <li>
+                  <%= link_to c.name, c, class: ('active' if c.id == @category.id)  %>
+                  <% if c.subcategories %>
+                    <ul>
+                        <% c.subcategories.each do |s| %>
+                            <li>
+                                <%= link_to s.name, s, class: ('active' if s.id == @category.id) %>
+                            </li>
+                        <% end  %>
+                    </ul>
+                  <% end %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+
+        <div class="right-column">
+          <% if @category.projects %>
+              <% @category.projects.each do |p| %>
+                  <%= render partial:'projects/partials/project_block', :locals => {p: p} %>
+              <% end %>
+          <% end %>
+        </div>
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>
+    </div>
+</div>

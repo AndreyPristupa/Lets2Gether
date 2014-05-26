@@ -1,0 +1,101 @@
+<%= form_for(@project,:html => { :multipart => true, class:'projects form-inline' }) do |f| %>
+  <div class="input-group <%= 'has-error' if @project.errors[:name] %>">
+    <%= f.label :name, t(:project_name) %>
+    <%= (content_tag :p,  @project.errors[:name][0], class:'bg-danger') if @project.errors[:name][0] %>
+    <%= f.text_field :name, class:'form-control', placeholder: @project.errors[:name][1] if @project.errors[:name] %>
+  </div>
+    <%= (content_tag :p, @project.errors[:start_at][0], class:'bg-danger') if @project.errors[:start_at] %>
+    <div class="wrapper">
+     <div class="form-group date">
+        <input type="text" class="form-control" id="start_at" name="start-date" data-behaviour="datepicker" placeholder="<%= t(:start_at) %>" />
+        <span class="add-on"><i class="icon-calendar" id="cal"></i></span>
+    </div>
+    -
+    <div class="form-group  <%= 'has-error' if @project.errors[:start_at].any? %>">
+      <input type="text" class="form-control" id="end_at" name="end-date" data-behaviour="datepicker" placeholder="<%= t(:end_at) %>"/>
+      <span class="add-on"><i class="icon-calendar" id="cal"></i></span>
+    </div>
+    <%= f.hidden_field :start_at %>
+    <%= f.hidden_field :end_at %>
+      <div id="video-frame"></div>
+   </div>
+    <div class="input-group">
+      <%= collection_select(:project, :category_id, Category.all, :id, :name, class:'form-control') %>
+    </div>
+  <div class="input-group">
+    <%= f.text_field :cost, class:'form-control', style: 'width:344px;margin-top:15px', placeholder: t(:project_cost) %>
+  </div>
+  <div class="input-group">
+    <%= f.label :image, t(:logo) %><br>
+    <%= f.file_field :image, class:'btn btn-primary', placeholder: t(:logo),style:'width:344px' %>
+  </div>
+  <div class="input-group">
+    <%= f.label :video, t(:project_video) %><br>
+    <%= f.text_field :video, class:'form-control', placeholder: t(:video_from_youtube) %>
+  </div>
+    <div class="input-group">
+      <%= f.label :description, t(:project_description) %><br>
+      <%= f.bootsy_area :description, class:'form-control editor' %>
+    </div>
+  <div class="input-group">
+    <%= content_tag :button, t(:create), type: :submit, class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
+<script>
+  $(document).on('ready', function(){
+    $('#project_video').on('change', function(){
+        if($(this).val().length < 20) {
+            <%= add_gritter(t(:error_not_valid_youtube_link), :title => t(:error), :image => :error) %>
+            $(this).val('');
+        } else {
+            var vid = getVideoId($(this));
+            if(vid != false) {
+                $(this).val(vid);
+                prepareVideo(vid);
+            }
+        }
+    });
+  });
+
+
+  function prepareVideo(key) {
+      var html = "";
+      html += "<iframe width='313' height='165' src='//www.youtube.com/embed/"+key+"' frameborder='0' allowfullscreen></iframe>";
+      $('#video-frame').html(html);
+
+  }
+
+  function blockVideo(){
+      $('#project_video').prop('disabled', true);
+      $.gritter.removeAll()
+  }
+
+  function removeVideo() {
+      $('#video_frame').html('');
+      $.gritter.removeAll()
+  }
+
+  function getVideoId(obj) {
+      var video_id = obj.val().split('v=')[1];
+      if(typeof video_id != 'undefined') {
+          var ampersandPosition = video_id.indexOf('&');
+      } else {
+          <%= add_gritter(t(:error_not_valid_youtube_link), :title => t(:error), :image => :error) %>
+          obj.val('');
+          return false;
+      }
+
+      if(ampersandPosition != -1) {
+          video_id = video_id.substring(0, ampersandPosition);
+      }
+
+      if(video_id.length <= 0) {
+          <%= add_gritter(t(:error_not_valid_youtube_link), :title => t(:error), :image => :error) %>
+          obj.val('');
+          return false;
+      } else {
+          return video_id;
+      }
+  }
+</script>

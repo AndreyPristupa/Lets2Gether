@@ -1,0 +1,82 @@
+<div class="content-box">
+  <div class="box">
+    <h1 class="title"><%= @project.name %></h1>
+    <div class="project-head">
+      <div class="project-video">
+          <iframe width="640" height="480" src="//www.youtube.com/embed/<%= @project.video %>" frameborder="0" allowfullscreen></iframe>
+      </div>
+       <div class="project-info">
+        <div class="project-location">
+            <span>Киев, Украина</span>
+        </div>
+        <div class="project-description">
+            <%= smart_truncate(strip_tags(@project.description).gsub(/&nbsp;/i,' '), :words => 30) %>
+        </div>
+         <div id="project-timer">
+           <div id="timer">
+            <%= content_tag :h4, t(:timer_remain) %>
+           </div>
+         </div>
+         <div class="project-paid">
+           <div>Собрано</div>
+           <%= @project.cost %>
+           <br>
+           <div>Необходимо</div>
+           <%= @project.cost %>
+           <div class="percent">50%</div>
+         </div>
+         <div class="project-provide">
+           <%= render partial:'payments/partials/paymentlist', locals: {payments: @payments, project: @project } %>
+           <%= content_tag :button, t(:provide_project) ,class: 'btn btn-primary btn-lg', 'data-toggle'=>'modal', href:'#payments' %>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="top-section" style="text-align: left;">
+  <%= @project.description.html_safe %>
+  <div class="project-socials">
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+      <a class="addthis_button_facebook"></a>
+      <a class="addthis_button_twitter"></a>
+      <a class="addthis_button_vk"></a>
+      <a class="addthis_button_google_plusone_share"></a>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51963d72636d1307"></script>
+    <!-- AddThis Button END -->
+  </div>
+  </div>
+</section>
+
+<section>
+<div class="box">
+  <div class="content-box no-bg">
+    <%= render partial: 'the_comments/tree', locals: { commentable: @project, comments_tree: @comments } %>
+  </div>
+</div>
+
+
+</section>
+
+<script>
+    $(function(){
+        var NY = Math.round((new Date(<%= @project.end_at %>)).getTime()/1000);
+        $('#timer').flipcountdown({
+            size: 'sm',
+            speedFlip:10,
+            tick:function(){
+                var nol = function(h){
+                    return h>9?h:'0'+h;
+                }
+                var range = NY-Math.round((new Date()).getTime()/1000),
+                        secday = 86400, sechour = 3600,
+                        days = parseInt(range/secday),
+                        hours = parseInt((range%secday)/sechour),
+                        min = parseInt(((range%secday)%sechour)/60),
+                        sec = ((range%secday)%sechour)%60;
+                return nol(days)+' '+nol(hours)+' '+nol(min)+' '+nol(sec);
+            }
+        });
+    })
+</script>

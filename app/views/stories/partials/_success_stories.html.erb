@@ -1,0 +1,8 @@
+<div class="success-inner">
+  <%= content_tag :h2, title %>
+  <div class="project-wrapper">
+    <% Story.success.each do |s| %>
+        <%= render partial: 'stories/partials/story_block', locals:{:s => s} %>
+    <% end  %>
+  </div>
+</div>

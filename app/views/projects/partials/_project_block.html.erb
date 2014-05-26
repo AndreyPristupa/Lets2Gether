@@ -1,0 +1,12 @@
+<div class="project-block">
+  <div class="project-image">
+    <%= link_to (image_tag p.image.url(:thumb)), p %>
+  </div>
+    <div class="project-inner">
+      <%= content_tag :div, p.name ,class: 'project-name' %>
+      <%= content_tag :div, (smart_truncate(p.description, :words => 14) + (content_tag :br)).html_safe, class: 'project-description' %>
+      <%= content_tag :div, (content_tag :span, t(:collected)) + p.cost.to_s, class: 'project-paid-need' %>
+      <%= content_tag :div, (content_tag :span, t(:money_count)) + p.cost.to_s, class: 'project-paid-count' %>
+      <%= content_tag :div, '50%', class: 'project-percent' %>
+    </div>
+</div>
