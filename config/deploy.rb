@@ -2,16 +2,29 @@
 lock '3.2.1'
 
 set :application, 'Lets2gether'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :repo_url, 'git@github.com:AndreyPristupa/Lets2Gether.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-# set :deploy_to, '/var/www/my_app'
+set :deploy_to, '/home/positivegame/webapps/lets2gether'
 
 # Default value for :scm is :git
-# set :scm, :git
+set :scm, :git
+
+role :app, 'web371.webfaction.com'
+role :web, 'web371.webfaction.com'
+role :db,  'web371.webfaction.com', :primary => true
+
+set :user, 'positivegame'
+set :password, 'igbkbdbkbnhb4'
+set :scm_username, 'AndreyPristupa'
+set :scm_password, 'igbkbdbkbnhb4'
+set :use_sudo, false
+set :ssh_options, { :forward_agent => true }
+set :tmp_dir, '/home/positivegame/123'
+#ssh_options[:keys] = 'C:/Users/Andrey/.ssh/'
 
 # Default value for :format is :pretty
 # set :format, :pretty
@@ -35,6 +48,11 @@ set :repo_url, 'git@example.com:me/my_repo.git'
 # set :keep_releases, 5
 
 namespace :deploy do
+
+  desc 'Restart nginx'
+  task :restart do
+    run "#{deploy_to}/bin/restart"
+  end
 
   desc 'Restart application'
   task :restart do
