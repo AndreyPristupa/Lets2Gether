@@ -22,3 +22,12 @@
 //= require_tree .
 //= require bootstrap-modal
 //= require bootstrap-modalmanager
+
+
+$(document).on('page:load', function(e) {
+    $('a').on('click', function(){
+        if($(this).className != 'nl'){
+            $('body').toggleClass('loading');
+        }
+    });
+});

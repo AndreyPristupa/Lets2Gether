@@ -17,6 +17,13 @@ class ProjectsController < ApplicationController
     @comments = @project.comments.with_state([:draft, :published])
   end
 
+  def search
+    @query = params
+    if params[:q]
+      @projects = Project.joins(:category).q(params[:q]).category_id(params[:category_id])
+    end
+  end
+
   # GET /projects/new
   def new
     gflash :error

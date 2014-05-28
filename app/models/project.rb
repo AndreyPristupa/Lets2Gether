@@ -6,6 +6,9 @@ class Project < ActiveRecord::Base
   belongs_to :user
   belongs_to :category
 
+  scope :category_id, lambda { |value| where('categories.id = ?', value) if value.is_a? Integer }
+  scope :q, lambda { |value| where('projects.name LIKE ?', "%#{value}%") if !value.empty? }
+
   validates :name, :start_at, :end_at, :description, :start_at, :end_at, presence: true
   validates :name, length: { in: 4..100, too_long: I18n.t(:too_long_field), too_short: I18n.t(:too_short_field) }
   validates :description, length: { in: 100...50000, too_long: I18n.t(:too_long_field), too_short: I18n.t(:too_short_field) }

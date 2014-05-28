@@ -24,7 +24,17 @@
       <ul class="menu">
         <li><a href="/about_us"><b>Что такое</b> LETS2GETHER?</a></li>
         <%= content_tag :li, (link_to t(:create_project), new_project_path) %>
-        <li><a href="/search"><b>Найти</b> <br />проэкт</a></li>
+        <li class="dropdown">
+          <%= link_to 'Категории', categories_path %>
+          <ul class="dropdown-menu" role="menu">
+            <% Category.where(:parent_id => nil).each do |c| %>
+                <li role="presentation">
+                  <%= link_to c.name, c, class: 'menuitem', tabindex:'1' %>
+                </li>
+            <% end %>
+          </ul>
+        </li>
+        <li><%= link_to 'Найти проэкт', search_projects_path %></li>
         <li><a href="/partners"><b>Найти</b> партнеров</a></li>
         <li><a href="/charity"><b>Благотворительность</b></a></li>
       </ul>
@@ -32,7 +42,8 @@
   </div>
 </header>
 
-<%= yield %>
+    <%= yield %>
+
 
 <footer>
   <div class="footer-inner">

@@ -12,7 +12,11 @@ Rails.application.routes.draw do
   resources :articles
 
   devise_for :users
-  resources :projects
+  resources :projects do
+    collection do
+      get 'search'
+    end
+  end
   mount Bootsy::Engine => '/bootsy', as: 'bootsy'
 
   resources :users
