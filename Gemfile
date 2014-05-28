@@ -27,4 +27,9 @@ gem 'bootstrap-sass', '~> 3.1.1'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bootstrap-modal-rails'
 gem 'net-ssh'
-gem 'capistrano'
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
+end
+

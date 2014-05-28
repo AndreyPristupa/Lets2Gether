@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86336961-609a-4d3c-b1de-eeae54fa52c1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Capfile" afterPath="$PROJECT_DIR$/Capfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/lets2gether.iml" afterPath="$PROJECT_DIR$/.idea/lets2gether.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy/production.rb" afterPath="$PROJECT_DIR$/config/deploy/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lets2gether.iws" />
@@ -19,10 +19,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/lets2gether@Development__lets2gether.coverage" NAME="Development: lets2gether Coverage Results" MODIFIED="1400966550111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
+    <SUITE FILE_PATH="coverage/lets2gether@Development__lets2gether.coverage" NAME="Development: lets2gether Coverage Results" MODIFIED="1401255936836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@the_comments_engine_install_migrations__lets2gether.coverage" NAME="the_comments_engine:install:migrations: lets2gether Coverage Results" MODIFIED="1399891722812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@Rails_console__lets2gether.coverage" NAME="Rails console: lets2gether Coverage Results" MODIFIED="1399217448043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
-    <SUITE FILE_PATH="coverage/lets2gether@deploy.coverage" NAME="deploy Coverage Results" MODIFIED="1401122460677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
+    <SUITE FILE_PATH="coverage/lets2gether@deploy.coverage" NAME="deploy Coverage Results" MODIFIED="1401254960863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@db_rollback__lets2gether.coverage" NAME="db:rollback: lets2gether Coverage Results" MODIFIED="1399887678011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@bootsy_install_migrations__lets2gether.coverage" NAME="bootsy:install:migrations: lets2gether Coverage Results" MODIFIED="1399544771761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@paperclip_clean__lets2gether.coverage" NAME="paperclip:clean: lets2gether Coverage Results" MODIFIED="1399563295834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
@@ -35,6 +35,7 @@
     <SUITE FILE_PATH="coverage/lets2gether@db_schema_load__lets2gether.coverage" NAME="db:schema:load: lets2gether Coverage Results" MODIFIED="1399837558794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@install__lets2gether.coverage" NAME="install: lets2gether Coverage Results" MODIFIED="1401122128717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@db_migrate_status__lets2gether.coverage" NAME="db:migrate:status: lets2gether Coverage Results" MODIFIED="1399541220651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
+    <SUITE FILE_PATH="coverage/lets2gether@deploy_restart__lets2gether.coverage" NAME="deploy:restart: lets2gether Coverage Results" MODIFIED="1401122975331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -51,7 +52,7 @@
       <file leaf-file-name="projects.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/projects.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="147" selection-end="202" vertical-scroll-proportion="-0.0" vertical-offset="34" max-vertical-offset="1156">
+            <state line="2" column="0" selection-start="147" selection-end="202" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1156">
               <folding />
             </state>
           </provider>
@@ -69,7 +70,7 @@
       <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="18" selection-start="221" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+            <state line="8" column="18" selection-start="221" selection-end="232" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
@@ -78,16 +79,7 @@
       <file leaf-file-name="payments_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/payments_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="6" selection-start="28" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payments_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/payments_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+            <state line="1" column="6" selection-start="28" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="187">
               <folding />
             </state>
           </provider>
@@ -96,7 +88,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="13" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="612">
+            <state line="32" column="22" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="697">
               <folding />
             </state>
           </provider>
@@ -105,7 +97,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="0.4047619" vertical-offset="238" max-vertical-offset="1326">
+            <state line="30" column="1" selection-start="806" selection-end="806" vertical-scroll-proportion="0.61167514" vertical-offset="269" max-vertical-offset="1139">
               <folding />
             </state>
           </provider>
@@ -114,7 +106,7 @@
       <file leaf-file-name="Capfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Capfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="561">
+            <state line="12" column="46" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="595">
               <folding />
             </state>
           </provider>
@@ -123,7 +115,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="33" selection-start="405" selection-end="405" vertical-scroll-proportion="-5.230769" vertical-offset="17" max-vertical-offset="884">
+            <state line="9" column="33" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -208,9 +200,9 @@
         <option value="$PROJECT_DIR$/app/views/payments/privat24.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/payments_controller.rb" />
-        <option value="$PROJECT_DIR$/Capfile" />
         <option value="$PROJECT_DIR$/config/deploy/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/Capfile" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
       </list>
     </option>
@@ -269,6 +261,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -371,7 +364,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -399,7 +391,7 @@
       <recent name="D:\lets2gether\app\assets\stylesheets" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby.deploy">
+  <component name="RunManager" selected="Rails.Development: lets2gether">
     <configuration default="false" name="install: lets2gether" type="CapistranoRunConfigurationType" factoryName="Capistrano" temporary="true">
       <module name="lets2gether" />
       <CAPISTRANO_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -434,28 +426,6 @@
       <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="D:/BitNami/rubystack-1.9.3-14/ruby/bin/irb" />
       <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--prompt simple" />
       <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="the_comments_engine:install:migrations: lets2gether" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
-      <module name="lets2gether" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="the_comments_engine:install:migrations" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -496,6 +466,25 @@
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="D:/BitNami/rubystack-1.9.3-14/ruby/lib/ruby/gems/1.9.1/gems/capistrano-3.2.1/bin/cap" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="production deploy" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="deploy:restart: lets2gether" type="CapistranoRunConfigurationType" factoryName="Capistrano" temporary="true">
+      <module name="lets2gether" />
+      <CAPISTRANO_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <CAPISTRANO_RUN_CONFIGURATION NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <CAPISTRANO_RUN_CONFIGURATION NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CAPISTRANO_RUN_CONFIGURATION NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CAPISTRANO_RUN_CONFIGURATION NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_TASK_NAME" VALUE="deploy:restart" />
+      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_TASK_ARGS" VALUE="production" />
+      <CAPISTRANO_RUN_CONFIG_SETTINGS_ID NAME="CAPISTRANO_STAGE" VALUE="staging" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -646,23 +635,23 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Capistrano.install: lets2gether" />
-      <item index="1" class="java.lang.String" itemvalue="IRB console.IRB console: lets2gether" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: lets2gether" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: lets2gether" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.test: lets2gether" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.spec: lets2gether" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.the_comments_engine:install:migrations: lets2gether" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.routes: lets2gether" />
-      <item index="8" class="java.lang.String" itemvalue="Ruby.deploy" />
+      <item index="0" class="java.lang.String" itemvalue="Rails.Production: lets2gether" />
+      <item index="1" class="java.lang.String" itemvalue="Rails.Development: lets2gether" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.test: lets2gether" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.spec: lets2gether" />
+      <item index="4" class="java.lang.String" itemvalue="Capistrano.install: lets2gether" />
+      <item index="5" class="java.lang.String" itemvalue="IRB console.IRB console: lets2gether" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.routes: lets2gether" />
+      <item index="7" class="java.lang.String" itemvalue="Ruby.deploy" />
+      <item index="8" class="java.lang.String" itemvalue="Capistrano.deploy:restart: lets2gether" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Ruby.deploy" />
-        <item index="1" class="java.lang.String" itemvalue="Capistrano.install: lets2gether" />
-        <item index="2" class="java.lang.String" itemvalue="IRB console.IRB console: lets2gether" />
-        <item index="3" class="java.lang.String" itemvalue="Rake.routes: lets2gether" />
-        <item index="4" class="java.lang.String" itemvalue="Rake.the_comments_engine:install:migrations: lets2gether" />
+        <item index="1" class="java.lang.String" itemvalue="Capistrano.deploy:restart: lets2gether" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.routes: lets2gether" />
+        <item index="3" class="java.lang.String" itemvalue="IRB console.IRB console: lets2gether" />
+        <item index="4" class="java.lang.String" itemvalue="Capistrano.install: lets2gether" />
       </list>
     </recent_temporary>
   </component>
@@ -694,7 +683,11 @@
       <created>1401103987338</created>
       <updated>1401103987338</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Configure capistrano">
+      <created>1401122546648</created>
+      <updated>1401122546648</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -721,27 +714,27 @@
     <frame x="0" y="0" width="1600" height="870" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294271" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3394256" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15404041" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4373368" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898173" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19066148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4373368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15404041" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19325551" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4373368" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4361979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32637075" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -760,9 +753,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24967907" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32220796" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4539642" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4539642" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -778,7 +771,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="First commit&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit&#10;" />
+    <MESSAGE value="Configure capistrano" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configure capistrano" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -786,11 +780,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1008" selection-end="1008" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="782" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/assets.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="379" />
@@ -948,9 +937,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="65" selection-start="1876" selection-end="1876" vertical-scroll-proportion="2.2637076" vertical-offset="408" max-vertical-offset="1547">
-          <folding />
-        </state>
+        <state line="75" column="65" selection-start="1876" selection-end="1876" vertical-scroll-proportion="2.2637076" vertical-offset="408" max-vertical-offset="1547" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/ru.yml">
@@ -960,51 +947,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/constants.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
+        <state line="7" column="17" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/categories.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="37" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="714">
-          <folding />
-        </state>
+        <state line="30" column="37" selection-start="732" selection-end="732" vertical-scroll-proportion="0.0" vertical-offset="21" max-vertical-offset="714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="110" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1479">
-          <folding />
-        </state>
+        <state line="28" column="110" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1479" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/payments/privat24.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="78" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="561">
-          <folding />
-        </state>
+        <state line="14" column="78" selection-start="674" selection-end="674" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="561" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/payments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <folding />
-        </state>
+        <state line="11" column="13" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="225" selection-end="225" vertical-scroll-proportion="0.3717694" vertical-offset="0" max-vertical-offset="1785">
-          <folding />
-        </state>
+        <state line="11" column="21" selection-start="225" selection-end="225" vertical-scroll-proportion="0.3717694" vertical-offset="0" max-vertical-offset="1785" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/payments_helper.rb">
@@ -1023,16 +996,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="10" selection-start="460" selection-end="460" vertical-scroll-proportion="0.5185185" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/deploy/staging.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
-          <folding />
-        </state>
+        <state line="14" column="10" selection-start="460" selection-end="460" vertical-scroll-proportion="0.5185185" vertical-offset="0" max-vertical-offset="459" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/projects.js.erb">
@@ -1049,30 +1013,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Capfile">
+    <entry file="file://$PROJECT_DIR$/config/deploy/staging.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="2" selection-end="2" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="561">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/BitNami/rubystack-1.9.3-14/ruby/lib/ruby/gems/1.9.1/gems/capistrano-3.2.1/lib/capistrano/dsl/paths.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="17" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.37530863" vertical-offset="868" max-vertical-offset="1853" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="33" selection-start="405" selection-end="405" vertical-scroll-proportion="-5.230769" vertical-offset="17" max-vertical-offset="884">
+        <state line="9" column="33" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0" vertical-offset="505" max-vertical-offset="884">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="742" selection-end="742" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="612">
+        <state line="32" column="22" selection-start="833" selection-end="833" vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Capfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="46" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="595">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="904" selection-end="904" vertical-scroll-proportion="0.4047619" vertical-offset="238" max-vertical-offset="1326">
+        <state line="30" column="1" selection-start="806" selection-end="806" vertical-scroll-proportion="0.61167514" vertical-offset="269" max-vertical-offset="1139">
           <folding />
         </state>
       </provider>
