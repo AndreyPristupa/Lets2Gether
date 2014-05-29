@@ -34,16 +34,7 @@ class User < ActiveRecord::Base
       user
     else
       token = Devise.friendly_token[0,6]
-      nu = User.new(:provider => access_token.provider, :url => access_token.info.urls.Vkontakte, :nickname => access_token.info.name, :email => "#{token}@vk.com", :password => token)
-
-      logger.info "#{access_token.provider}"
-      logger.info "#{access_token.info.urls.Vkontakte}"
-      logger.info "#{access_token.info.name}"
-      logger.info "#{access_token.extra.raw_info.domain}@vk.com"
-      logger.info "#{}"
-
-      logger.info "#{nu.inspect}"
-      nu.save!
+      User.create!(:provider => access_token.provider, :url => access_token.info.urls.Vkontakte, :nickname => access_token.info.name, :email => "#{token}@vk.com", :password => token)
     end
   end
 end
