@@ -34,7 +34,7 @@ class User < ActiveRecord::Base
 
       nu = User.new(:provider => access_token.provider, :url => access_token.info.urls.Vkontakte, :username => access_token.info.name, :nickname => access_token.extra.raw_info.domain, :email => "#{access_token.extra.raw_info.domain}@vk.com", :password => Devise.friendly_token[0,20])
       p nu.inspect
-      nu.save
+      nu.save!
     end
   end
 end
