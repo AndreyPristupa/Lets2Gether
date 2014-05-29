@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140529094006) do
+ActiveRecord::Schema.define(version: 20140529155419) do
 
   create_table "articles", force: true do |t|
     t.integer  "user_id"
@@ -154,6 +154,10 @@ ActiveRecord::Schema.define(version: 20140529094006) do
     t.integer  "published_comcoms_count",     default: 0
     t.integer  "deleted_comcoms_count",       default: 0
     t.integer  "spam_comcoms_count",          default: 0
+    t.string   "nickname"
+    t.string   "provider"
+    t.string   "url"
+    t.string   "username"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
