@@ -27,14 +27,21 @@ class User < ActiveRecord::Base
   end
 
   def self.find_for_vkontakte_oauth access_token
-    logger.info "#{access_token.inspect}"
+
+
     user = User.where(:url => access_token.info.urls.Vkontakte).first
     if user
       user
     else
 
       nu = User.new(:provider => access_token.provider, :url => access_token.info.urls.Vkontakte, :username => access_token.info.name, :nickname => access_token.extra.raw_info.domain, :email => "#{access_token.extra.raw_info.domain}@vk.com", :password => Devise.friendly_token[0,20])
-      p nu.inspect
+      logger.info "#{access_token.provider}"
+      logger.info "#{access_token.info.urls.Vkontakte}"
+      logger.info "#{access_token.info.name}"
+      logger.info "#{access_token.extra.raw_info.domain}@vk.com"
+      logger.info "#{Devise.friendly_token[0,20]}"
+
+      logger.info "#{nu.inspect}"
       nu.save!
     end
   end
