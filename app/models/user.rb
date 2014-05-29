@@ -27,6 +27,7 @@ class User < ActiveRecord::Base
   end
 
   def self.find_for_vkontakte_oauth access_token
+    logger.info "This is from info"
     user = User.where(:url => access_token.info.urls.Vkontakte).first
     if user
       user
