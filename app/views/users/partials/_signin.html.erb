@@ -2,5 +2,5 @@
     <span><%= (t(:greetings) + (link_to current_user.email, '/profile')).html_safe %></span>
     <%= link_to '('+t(:logout)+')', destroy_user_session_path, :method => :delete %>
 <% else %>
-    <%= link_to t(:signin), new_user_session_path %> <%= link_to t(:signup), new_user_registration_path %>
+    <%= link_to t(:signin), new_user_session_path %> <%= link_to t(:signup), new_user_registration_path, 'data-no-turbolink' => true %>
 <% end %>

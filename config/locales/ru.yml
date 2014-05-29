@@ -24,6 +24,7 @@ ru:
   lastname: "Фамилия"
   slogan: "Ваш слоган"
   sent: "Отправить"
+  recaptha_error: "Каптча введена не верно!"
   image: "Аватара"
   update_profile_button: "Обновить профиль"
   create_project: "Создать проэкт"

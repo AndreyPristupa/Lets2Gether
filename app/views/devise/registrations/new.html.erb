@@ -13,7 +13,11 @@
   <div class="form-group"><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation, class:'form-control' %></div>
 
+      <div class="form-group" id="recaptcha"><%= recaptcha_tags %></div>
+
+
   <div class="form-group"><%= f.submit t(:signup), class:'btn btn-primary' %></div>
+
 <% end %>
 
 <%= render "devise/shared/links" %>
