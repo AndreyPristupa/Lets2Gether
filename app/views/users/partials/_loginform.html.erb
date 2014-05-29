@@ -9,9 +9,9 @@
       <%= content_tag :div, (f.check_box :remember) + ' ' + t(:remember_me), class:'rememberMe' %>
       <%= content_tag :div, (link_to t(:recover_password), '/user/recover'), class:'forget-password' %>
     <% end %>
-    <%= content_tag :div, (
-        (link_to (image_tag 'fb-login-btn.png', alt: t(:fb_login)),'#')+
-        (link_to (image_tag 'vk-login-btn.png', alt: t(:vk_login)), '#')
-    ), class:'social-login-btns' %>
+  <div class="social-login-btns">
+    <%= link_to (image_tag 'fb-login-btn.png', alt: t(:fb_login)), user_omniauth_authorize_path(:facebook) %>
+    <%= link_to (image_tag 'fb-login-btn.png', alt: t(:fb_login)), user_omniauth_authorize_path(:vkontakte) %>
+  </div>
   <%= content_tag :div, (link_to t(:signin), new_user_path), class:'registration-link' %>
 </div>

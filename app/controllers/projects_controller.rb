@@ -14,6 +14,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1
   # GET /projects/1.json
   def show
+    @project.increment! :views
     @comments = @project.comments.with_state([:draft, :published])
   end
 
@@ -26,7 +27,6 @@ class ProjectsController < ApplicationController
 
   # GET /projects/new
   def new
-    gflash :error
     @project = Project.new
   end
 
@@ -37,7 +37,11 @@ class ProjectsController < ApplicationController
   # POST /projects
   # POST /projects.json
   def create
+
     @project = Project.new(project_params)
+    @project.user_id = current_user.id ? current_user.id : 0
+    @project.is_enabled = Constants::DISABLED
+    @project.status = Constants::NEW
 
     respond_to do |format|
       if @project.save

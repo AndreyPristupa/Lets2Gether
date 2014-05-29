@@ -9,10 +9,11 @@ class User < ActiveRecord::Base
          :recoverable,
          :rememberable,
          :trackable,
-         :validatable
+         :validatable,
+         :omniauthable,
+         :omniauth_providers => [:facebook, :vkontakte]
 
   #validates :firstname, :lastname, presence: true
-
 
   def admin?
     self == User.first

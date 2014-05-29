@@ -1,10 +1,10 @@
 <%= form_for(@project,:html => { :multipart => true, class:'projects form-inline' }) do |f| %>
-  <div class="input-group <%= 'has-error' if @project.errors[:name] %>">
+  <div class="input-group <%= 'has-error' if @project.errors[:name].any? %>">
     <%= f.label :name, t(:project_name) %>
     <%= (content_tag :p,  @project.errors[:name][0], class:'bg-danger') if @project.errors[:name][0] %>
     <%= f.text_field :name, class:'form-control', placeholder: @project.errors[:name][1] if @project.errors[:name] %>
   </div>
-    <%= (content_tag :p, @project.errors[:start_at][0], class:'bg-danger') if @project.errors[:start_at] %>
+    <%= (content_tag :p, @project.errors[:start_at][0], class:'bg-danger') if @project.errors[:start_at].any? %>
     <div class="wrapper">
      <div class="form-group date">
         <input type="text" class="form-control" id="start_at" name="start-date" data-behaviour="datepicker" placeholder="<%= t(:start_at) %>" />
@@ -18,9 +18,10 @@
     <%= f.hidden_field :start_at %>
     <%= f.hidden_field :end_at %>
       <div id="video-frame"></div>
-   </div>
+
+    <br/>
     <div class="input-group">
-      <%= collection_select(:project, :category_id, Category.all, :id, :name, class:'form-control') %>
+      <%= collection_select :project,:category_id,Category.all,:id,:name,{prompt: 'Выберите категорию'}, {class: 'form-control'} %>
     </div>
   <div class="input-group">
     <%= f.text_field :cost, class:'form-control', style: 'width:344px;margin-top:15px', placeholder: t(:project_cost) %>
@@ -29,6 +30,7 @@
     <%= f.label :image, t(:logo) %><br>
     <%= f.file_field :image, class:'btn btn-primary', placeholder: t(:logo),style:'width:344px' %>
   </div>
+    </div>
   <div class="input-group">
     <%= f.label :video, t(:project_video) %><br>
     <%= f.text_field :video, class:'form-control', placeholder: t(:video_from_youtube) %>

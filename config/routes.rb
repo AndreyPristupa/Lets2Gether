@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  namespace :users do
+  get 'omniauth_callbacks/facebook'
+  end
+
+  namespace :users do
+  get 'omniauth_callbacks/vkontakte'
+  end
+
   resources :payments do
     collection do
       post 'callback'
@@ -11,7 +19,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :articles
 
-  devise_for :users, controllers: { registrations: 'registrations' }
+  devise_for :users, controllers: { registrations: 'registrations', :omniauth_callbacks => 'users/omniauth_callbacks' }
   resources :projects do
     collection do
       get 'search'

@@ -27,6 +27,9 @@ gem 'magnific-popup-rails'
 gem 'jquery-rails'
 gem 'bootstrap-datepicker-rails'
 gem 'recaptcha', :require => 'recaptcha/rails'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-vkontakte'
 
 group :production do
   gem 'mysql2'

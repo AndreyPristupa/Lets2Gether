@@ -1,3 +1,4 @@
+<% amount_percent = (@project.payments.sum(:amount) * 100) / @project.cost %>
 <div class="content-box">
   <div class="box">
     <h1 class="title"><%= @project.name %></h1>
@@ -19,11 +20,15 @@
          </div>
          <div class="project-paid">
            <div>Собрано</div>
-           <%= @project.cost %>
+           <%= @project.payments.sum(:amount) %>
            <br>
            <div>Необходимо</div>
            <%= @project.cost %>
-           <div class="percent">50%</div>
+           <div class="progress progress-striped active">
+             <div class="progress-bar"  role="progressbar" aria-valuenow="<%= amount_percent %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= amount_percent %>%">
+               <%= amount_percent %>%
+             </div>
+           </div>
          </div>
          <div class="project-provide">
            <%= render partial:'payments/partials/paymentlist', locals: {payments: @payments, project: @project } %>

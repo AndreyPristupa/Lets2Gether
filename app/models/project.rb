@@ -5,6 +5,7 @@ class Project < ActiveRecord::Base
 
   belongs_to :user
   belongs_to :category
+  has_many :payments
 
   scope :category_id, lambda { |value| where('categories.id = ?', value) if value.is_a? Integer }
   scope :q, lambda { |value| where('projects.name LIKE ?', "%#{value}%") if !value.empty? }

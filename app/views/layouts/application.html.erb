@@ -23,7 +23,7 @@
     <div id="mainmenu">
       <ul class="menu">
         <li><a href="/about_us"><b>Что такое</b> LETS2GETHER?</a></li>
-        <%= content_tag :li, (link_to t(:create_project), new_project_path) %>
+        <%= content_tag :li, (link_to t(:create_project), new_project_path, 'data-no-turbolink' => true) %>
         <li class="dropdown">
           <%= link_to 'Категории', categories_path %>
           <ul class="dropdown-menu" role="menu">
