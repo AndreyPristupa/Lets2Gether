@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="86336961-609a-4d3c-b1de-eeae54fa52c1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lets2gether.iws" />
@@ -19,7 +18,7 @@
     <SUITE FILE_PATH="coverage/lets2gether@Development__lets2gether.coverage" NAME="Development: lets2gether Coverage Results" MODIFIED="1401364895977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@the_comments_engine_install_migrations__lets2gether.coverage" NAME="the_comments_engine:install:migrations: lets2gether Coverage Results" MODIFIED="1399891722812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@Rails_console__lets2gether.coverage" NAME="Rails console: lets2gether Coverage Results" MODIFIED="1399217448043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
-    <SUITE FILE_PATH="coverage/lets2gether@deploy.coverage" NAME="deploy Coverage Results" MODIFIED="1401379618778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
+    <SUITE FILE_PATH="coverage/lets2gether@deploy.coverage" NAME="deploy Coverage Results" MODIFIED="1401380403324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@db_rollback__lets2gether.coverage" NAME="db:rollback: lets2gether Coverage Results" MODIFIED="1399887678011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@bootsy_install_migrations__lets2gether.coverage" NAME="bootsy:install:migrations: lets2gether Coverage Results" MODIFIED="1399544771761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@paperclip_clean__lets2gether.coverage" NAME="paperclip:clean: lets2gether Coverage Results" MODIFIED="1399563295834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
@@ -64,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="20" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+            <state line="34" column="6" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.6641975" vertical-offset="309" max-vertical-offset="731">
               <folding />
             </state>
           </provider>
@@ -82,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.75598085" vertical-offset="942" max-vertical-offset="1360">
+            <state line="74" column="0" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1360">
               <folding />
             </state>
           </provider>
@@ -210,8 +209,8 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/omniauth_callbacks_controller.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
       </list>
     </option>
   </component>
@@ -854,7 +853,15 @@
       <created>1401379592812</created>
       <updated>1401379592812</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="bug fix&#10;">
+      <created>1401379998495</created>
+      <updated>1401379998495</updated>
+    </task>
+    <task id="LOCAL-00016" summary="bug fix&#10;">
+      <created>1401380393024</created>
+      <updated>1401380393024</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -927,7 +934,8 @@
     <MESSAGE value="Fix vk authorization&#10;" />
     <MESSAGE value="Fix vk user db save&#10;" />
     <MESSAGE value="Convert query to Rails 4&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Convert query to Rails 4&#10;" />
+    <MESSAGE value="bug fix&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1212,16 +1220,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+        <state line="74" column="0" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1360">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.75598085" vertical-offset="942" max-vertical-offset="1360">
+        <state line="34" column="6" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.6641975" vertical-offset="309" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
