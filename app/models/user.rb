@@ -33,13 +33,14 @@ class User < ActiveRecord::Base
     if user
       user
     else
+      token = Devise.friendly_token[0,6]
+      nu = User.new(:provider => access_token.provider, :first_name => access_token.info.first_name, :url => access_token.info.urls.Vkontakte, :nickname => access_token.info.name, :email => "#{token}@vk.com", :password => token)
 
-      nu = User.new(:provider => access_token.provider, :url => access_token.info.urls.Vkontakte, :username => access_token.info.name, :nickname => access_token.extra.raw_info.domain, :email => "#{access_token.extra.raw_info.domain}@vk.com", :password => Devise.friendly_token[0,20])
       logger.info "#{access_token.provider}"
       logger.info "#{access_token.info.urls.Vkontakte}"
       logger.info "#{access_token.info.name}"
       logger.info "#{access_token.extra.raw_info.domain}@vk.com"
-      logger.info "#{Devise.friendly_token[0,20]}"
+      logger.info "#{}"
 
       logger.info "#{nu.inspect}"
       nu.save!
