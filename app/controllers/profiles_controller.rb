@@ -6,6 +6,11 @@ class ProfilesController < ApplicationController
   def index
     redirect_to update_profile_path unless current_user.firstname || current_user.lastname
     @user = current_user
+    slug = nil
+    if params[:slug]
+      slug = "profiles/partials/#{params[:slug]}"
+    end
+    @slug = slug
   end
 
   def update

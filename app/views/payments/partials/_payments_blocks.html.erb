@@ -1,0 +1,5 @@
+<div class="payments">
+  <% payments.each do |payment| %>
+    <%= render partial: 'payments/partials/payments_single_block', locals: {payment:payment} %>
+  <% end %>
+</div>

@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   include TheComments::User
   has_many :projects
+  has_many :payments
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable,

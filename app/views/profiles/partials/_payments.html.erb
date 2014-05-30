@@ -1,0 +1,10 @@
+<h2 class="title">Пожертвования</h2>
+<% if @user.payments.empty? %>
+    <div class="jumbotron">
+      <h3>Вы еще не вносили пожертвований</h3>
+    </div>
+<% else %>
+    <div class="jumbotron">
+      <%= render partial: 'payments/partials/payments_blocks', locals: {payments:@user.payments} %>
+    </div>
+<% end %>
