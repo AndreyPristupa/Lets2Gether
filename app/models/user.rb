@@ -71,7 +71,7 @@ class User < ActiveRecord::Base
                    :image     => access_token.extra.raw_info.photo_200_orig,
                    :firstname => access_token.info.first_name,
                    :nickname  => access_token.info.name,
-                   :lastanme  => access_token.info.last_name,
+                   :lastname  => access_token.info.last_name,
                    :url       => access_token.info.urls.Vkontakte,
                    :nickname  => access_token.info.name,
                    :email     => "#{token}@vk.com",

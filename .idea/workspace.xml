@@ -18,7 +18,7 @@
     <SUITE FILE_PATH="coverage/lets2gether@Development__lets2gether.coverage" NAME="Development: lets2gether Coverage Results" MODIFIED="1401364895977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@the_comments_engine_install_migrations__lets2gether.coverage" NAME="the_comments_engine:install:migrations: lets2gether Coverage Results" MODIFIED="1399891722812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@Rails_console__lets2gether.coverage" NAME="Rails console: lets2gether Coverage Results" MODIFIED="1399217448043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
-    <SUITE FILE_PATH="coverage/lets2gether@deploy.coverage" NAME="deploy Coverage Results" MODIFIED="1401431087177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
+    <SUITE FILE_PATH="coverage/lets2gether@deploy.coverage" NAME="deploy Coverage Results" MODIFIED="1401432088604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@db_rollback__lets2gether.coverage" NAME="db:rollback: lets2gether Coverage Results" MODIFIED="1399887678011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@bootsy_install_migrations__lets2gether.coverage" NAME="bootsy:install:migrations: lets2gether Coverage Results" MODIFIED="1399544771761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
     <SUITE FILE_PATH="coverage/lets2gether@paperclip_clean__lets2gether.coverage" NAME="paperclip:clean: lets2gether Coverage Results" MODIFIED="1399563295834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="lets2gether" />
@@ -57,7 +57,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="76" selection-start="2370" selection-end="2370" vertical-scroll-proportion="0.55263156" vertical-offset="959" max-vertical-offset="1479">
+            <state line="71" column="62" selection-start="2433" selection-end="2433" vertical-scroll-proportion="0.69138753" vertical-offset="918" max-vertical-offset="1479">
               <folding />
             </state>
           </provider>
@@ -905,7 +905,11 @@
       <created>1401430941978</created>
       <updated>1401430941978</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Fix saving photo_200_orig in DB&#10;">
+      <created>1401432071772</created>
+      <updated>1401432071772</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -985,7 +989,8 @@
     <MESSAGE value="Global User debag....&#10;" />
     <MESSAGE value="User inserting test&#10;" />
     <MESSAGE value="Improve User description from VK provider&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improve User description from VK provider&#10;" />
+    <MESSAGE value="Fix saving photo_200_orig in DB&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix saving photo_200_orig in DB&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1269,7 +1274,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="76" selection-start="2370" selection-end="2370" vertical-scroll-proportion="0.55263156" vertical-offset="959" max-vertical-offset="1479">
+        <state line="71" column="62" selection-start="2433" selection-end="2433" vertical-scroll-proportion="0.69138753" vertical-offset="918" max-vertical-offset="1479">
           <folding />
         </state>
       </provider>
