@@ -27,7 +27,7 @@
         <li class="dropdown">
           <%= link_to 'Категории', categories_path %>
           <ul class="dropdown-menu" role="menu">
-            <% Category.where(:parent_id => nil).each do |c| %>
+            <% Category.all.each do |c| %>
                 <li role="presentation">
                   <%= link_to c.name, c, class: 'menuitem', tabindex:'1' %>
                 </li>

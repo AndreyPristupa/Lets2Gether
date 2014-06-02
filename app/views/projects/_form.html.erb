@@ -1,3 +1,5 @@
+<%= @project.errors.inspect %>
+
 <%= form_for(@project,:html => { :multipart => true, class:'projects form-inline' }) do |f| %>
   <div class="input-group <%= 'has-error' if @project.errors[:name].any? %>">
     <%= f.label :name, t(:project_name) %>
@@ -21,7 +23,7 @@
 
     <br/>
     <div class="input-group">
-      <%= collection_select :project,:category_id,Category.all,:id,:name,{prompt: 'Выберите категорию'}, {class: 'form-control'} %>
+      <%= collection_select :project,:category_id,Category.all,:id,:name,{prompt: 'Выберите категорию'}, {class: 'form-control', style: 'margin-top:20px'} %>
     </div>
   <div class="input-group">
     <%= f.text_field :cost, class:'form-control', style: 'width:344px;margin-top:15px', placeholder: t(:project_cost) %>

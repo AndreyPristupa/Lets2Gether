@@ -1,23 +1,22 @@
 class CategoriesController < ApplicationController
 
   before_action :set_category, only: [:show, :edit, :update, :destroy]
+  before_action :set_categories, only: [:show, :index]
 
   # GET /categories
   # GET /categories.json
   def index
-    @categories = Category.all
+    @projects = Project.paginate(:page => params[:page], :per_page => 9)
   end
 
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @categories = Category.where(:parent_id => nil)
   end
 
   # GET /categories/new
   def new
     @category = Category.new
-    @category.parent = Category.find(params[:id]) unless params[:id].nil?
   end
 
   # GET /categories/1/edit
@@ -65,6 +64,10 @@ class CategoriesController < ApplicationController
   end
 
   private
+    def set_categories
+      @categories = Category.all
+    end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_category
       @category = Category.find(params[:id])

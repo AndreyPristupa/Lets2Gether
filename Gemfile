@@ -21,15 +21,21 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'net-ssh'
 gem 'gritter', '1.1.0'
+
 gem 'bootstrap-modal-rails'
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'bootstrap-datepicker-rails'
+
 gem 'magnific-popup-rails'
 gem 'jquery-rails'
-gem 'bootstrap-datepicker-rails'
 gem 'recaptcha', :require => 'recaptcha/rails'
+
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'omniauth-vkontakte'
+
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'
 
 group :production do
   gem 'mysql2'

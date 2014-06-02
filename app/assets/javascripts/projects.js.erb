@@ -3,7 +3,8 @@
 <% url = Lets2gether::Application.routes.url_helpers %>
 $(document).on('ready', function(){
     $('[data-behaviour~=datepicker]').datepicker({
-        format: 'dd M yyyy'
+        format: 'dd M yyyy',
+        startDate: new Date()
     });
     $('.wysihtml5').each(function(i, elem) {
         $(elem).wysihtml5();
