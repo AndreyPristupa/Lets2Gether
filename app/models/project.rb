@@ -17,7 +17,10 @@ class Project < ActiveRecord::Base
 
   attr_accessor :image
 
-  has_attached_file :image, :styles => {:small => '200x250>', :medium => '300x300>', :thumb => '100x100>', :big => '500x500>', :block => '250x227>' }
+  has_attached_file :image,
+                    :url  => '/assets/vehicles/:id/:style/:basename.:extension',
+                    :path => ':rails_root/public/assets/vehicles/:id/:style/:basename.:extension',
+                    :styles => {:small => '200x250>', :medium => '300x300>', :thumb => '100x100>', :big => '500x500>', :block => '250x227>' }
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 
   def self.related
