@@ -11,8 +11,8 @@
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1:3306/lets2gether</jdbc-url>
-      <user-name>root</user-name>
-      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <user-name>lets2gether</user-name>
+      <user-password>dfc3dfcddfc8dfc1dfc8dfcedfc8dfc1dfc8dfc4dfc2dfc8df9e</user-password>
       <libraries />
     </data-source>
   </component>
