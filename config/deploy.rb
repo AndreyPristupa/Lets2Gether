@@ -8,6 +8,7 @@ set :deploy_to, '/home/positivegame/webapps/lets2gether'
 
 set :scm, :git
 
+
 role :app, 'web371.webfaction.com'
 role :web, 'web371.webfaction.com'
 role :db,  'web371.webfaction.com', :primary => true
