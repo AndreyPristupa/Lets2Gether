@@ -21,7 +21,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
   database: lets2gether
   username: lets2gether

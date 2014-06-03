@@ -28,6 +28,7 @@ gem 'bootstrap-datepicker-rails'
 
 gem 'magnific-popup-rails'
 gem 'jquery-rails'
+
 gem 'recaptcha', :require => 'recaptcha/rails'
 
 gem 'omniauth'
@@ -38,7 +39,7 @@ gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 
 group :production do
-  gem 'mysql2'
+  gem 'mysql'
 end
 
 group :development do
