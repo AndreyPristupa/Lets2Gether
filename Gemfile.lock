@@ -130,6 +130,7 @@ GEM
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     mysql (2.9.1-x86-mingw32)
+    mysql2 (> 0.3)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
@@ -262,7 +263,6 @@ DEPENDENCIES
   jquery-rails
   magnific-popup-rails
   mini_magick (~> 3.7.0)
-  mysql
   net-ssh
   omniauth
   omniauth-facebook
