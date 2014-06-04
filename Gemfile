@@ -39,7 +39,7 @@ gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 
 group :production do
-  gem 'mysql2' '> 0.3'
+  gem 'mysql2', '0.3.11'
 end
 
 group :development do
